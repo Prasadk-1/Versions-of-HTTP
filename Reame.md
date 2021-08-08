@@ -9,6 +9,14 @@ HTTPS URLs begin with "https://" and use port 443 by default, whereas, HTTP URLs
 
 Vesions of the HTTP:
 the Versions of the HTTP are as follows,
+-Invention of the World Wide Web.
+-HTTP/0.9 – The one-line protocol.
+-HTTP/1.0 – Building extensibility.
+-HTTP/1.1 – The standardized protocol.
+  More than 15 years of extensions.
+-HTTP/2 – A protocol for greater performance.
+-Post-HTTP/2 evolution.
+-HTTP/3 - HTTP over QUIC.
 
 HTTP/0.9 – The one-line protocol:
 The initial version of HTTP had no version number; it has been later called 0.9 to differentiate it from the later versions. HTTP/0.9 is extremely simple: requests consist of a single line and start with the only possible method GET followed by the path to the resource (not the URL as both the protocol, server, and port are unnecessary once connected to the server).
@@ -21,7 +29,8 @@ The response is extremely simple too: it only consisted of the file itself.
 A very simple HTML page
 </HTML>
 
-    Unlike subsequent evolutions, there were no HTTP headers, meaning that only HTML files could be transmitted, but no other type of documents. There were no status or error codes: in case of a problem, a specific HTML file was sent back with the description of the problem contained in it, for human consumption.
+  
+   Unlike subsequent evolutions, there were no HTTP headers, meaning that only HTML files could be transmitted, but no other type of documents. There were no status or error codes: in case of a problem, a specific HTML file was sent back with the description of the problem contained in it, for human consumption
     
 HTTP/1.0 – Building extensibility:
 HTTP/0.9 was very limited and both browsers and servers quickly extended it to be more versatile:
@@ -56,3 +65,15 @@ The HTTP/2 protocol has several prime differences from the HTTP/1.1 version:
   -It allows a server to populate data in a client cache, in advance of it being required, through a mechanism called the server push.
   
   Officially standardized, in May 2015, HTTP/2 has had much success. By July 2016, 8.7% of all Web sites were already using it.
+
+
+Post-HTTP/2 evolution:
+   HTTP didn't stop evolving upon the release of HTTP/2. Like with HTTP/1.x previously, HTTP's extensibility is still being used to add new features. Notably, we can cite new extensions of the HTTP protocol appearing in 2016:
+
+  -Support of Alt-Svc allows the dissociation of the identification and the location of a given resource, allowing for a smarter CDN caching mechanism.
+  -The introduction of Client-Hints allows the browser, or client, to proactively communicate information about its requirements, or hardware constraints, to the server.
+  -The introduction of security-related prefixes in the Cookie header, now helps guarantee a secure cookie has not been altered.
+   This evolution of HTTP proves its extensibility and simplicity, liberating creation of many applications and compelling the adoption of the protocol. The environment in which HTTP is used today is quite different from that seen in the early 1990s. HTTP's original design proved to be a masterpiece, allowing the Web to evolve over a quarter of a century, without the need of a mutiny. By healing flaws, yet retaining the flexibility and extensibility which made HTTP such a success, the adoption of HTTP/2 hints at a bright future for the protocol.
+   
+HTTP/3 - HTTP over QUIC:
+   The next major version of HTTP, HTTP/3, will use QUIC instead TCP/TLS for the transport layer portion.
